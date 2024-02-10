@@ -1,0 +1,30 @@
+.footer__container{
+    width: var(--container-width-100);
+    background-color: var(--color-primary-variant);
+    padding: 1rem 0px;
+}
+
+.footer__bottom{
+    width: var(--container-width-md);
+    margin-inline: auto;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+}
+
+.footer__Bcontent p {
+    text-align: center;
+}
+
+/*Media queries for Tablets*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+}
+
+@media screen and (max-width: 767px) {
+    .footer__Bcontent p {
+        font-size: 10px;
+    }
+}

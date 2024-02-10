@@ -11,3 +11,50 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root {
+  /* Color */
+  --matte-black: #28282B;
+  --gray: #e7ebee;
+  --white: #ffffff;
+  --color-primary: #01028F;
+  --color-primary-accent: #898AF5;
+  --color-primary-variant: #03074C;
+  --color-secondary: #F0231F;
+  --color-secondary-accent: #A30C09; 
+
+  --container-width-lg: 90%;
+  --container-width-100: 100%;
+  --container-width-md: 80%;
+
+  /*titles and text*/
+  --title-1: 3.5rem;
+  --item-title: 1.7rem;
+
+  /*transitions*/
+  --transition: all ease-in-out 300ms;
+
+  /*items container width*/
+  --item-container-45: 48%;
+}
+
+.inspectionButton{
+  background-color: aqua;
+  padding: 8px 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*General css*/
+.underline{
+  content: '';
+  width: 7rem;
+  height: .3rem;
+  background-color: var(--color-primary-accent);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -.5rem;
+}

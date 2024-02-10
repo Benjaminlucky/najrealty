@@ -1,0 +1,44 @@
+.nav__container{
+    width: var(--container-width-100);
+    margin-inline: auto;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.nav__content{
+    width: var(--container-width-md);
+    margin-inline: auto;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo{
+    max-width: 7rem;
+}
+
+.nav__menu{
+    align-items: center;
+}
+
+/*
+.nav__container{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+}
+*/
+.inspectionButton {
+    background-color: var(--color-primary-accent);
+    color: var(--white)!important;  
+    border-radius: 20px;  
+    padding: 8px 16px;
+  }

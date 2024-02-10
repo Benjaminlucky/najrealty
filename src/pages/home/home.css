@@ -1,0 +1,167 @@
+/* container wrapping everything on the Homepage */
+.main__container{
+    width: var(--container-width-100);
+}
+
+/*container for the Hero Section */
+
+.hero-section{
+    width: 100%;
+    background-color: var(--color-primary);
+    overflow-x: hidden;
+}
+
+/* container that wraps everything on the container */
+
+.hero__section-container{
+    width: var(--container-width-md);
+    margin-inline: auto;
+    display: flex;
+}
+
+/*Hero content wrapper*/
+.hsContent{
+    padding: 4.8rem 0;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+/* main text on hero */
+.hsContent-msg{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.hsContent-msg h1{
+    font-size: 65px;
+    text-align: center;
+}
+
+.hsContent-msg h6{
+ text-align: center;
+ font-size: 17px;
+ font-weight: 400;
+}
+
+/* Hero Buttons*/
+
+.hsContent-btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    align-content: center;
+}
+
+
+.btn{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn-secondary{
+    background-color: var(--color-secondary);
+}
+
+.btn-primary{
+    background-color: var(--color-primary-accent);
+}
+
+
+
+/*Hero Buttons end*/
+
+
+/*Media Queries for Tablet screens and larger */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .hero__section-container{
+        display: flex;
+        justify-content: center;
+    }
+    .hsContent{
+        width: var(--container-width-lg);
+        padding: 3rem 1rem ;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hsContent-msg{
+        max-width: 100%;
+        gap: 1rem;
+    }
+
+    .hsContent-msg{
+        max-width: 100%;
+    }
+
+    .hsContent-msg h1{
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+
+/*Media queries for small devices from 767px and smaller*/
+
+@media screen and (max-width: 767px) {
+    .hero__section-container{
+        margin-inline: auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+    }
+
+    .hsContent{
+        width: var(--container-width-lg);
+        padding: 4rem 0;
+    }
+
+    .hsContent-msg{
+        max-width: 100%;
+        margin-inline: auto;
+    }
+
+    .hsContent-msg{
+        padding: 1rem 0px;
+        max-width: 100%;
+        margin-inline: auto;
+        gap: .5rem;
+    }
+
+    .hsContent-msg h1{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .hsContent-msg h6{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .hsContent-btns{
+        display: none;
+    }
+}
+
+/*Service section css*/
+
+.service__section{
+    display: flex;
+    width: var(--container-width-100);
+    margin-inline: auto;
+    padding: 3rem 0;
+}
+
+/*end service section css*/

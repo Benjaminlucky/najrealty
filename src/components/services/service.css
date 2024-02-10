@@ -1,0 +1,185 @@
+/*service section wrapper css*/
+.service__wrapper{
+    display: flex;
+    width: var(--container-width-md);
+    margin-inline: auto;
+}
+
+/*service section wrapper css end */
+
+/*service content css starts here*/
+
+.serviceContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/*service content css ends here*/
+
+/*service section title css*/
+.section__title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.section__title h2{
+    font-size: var(--title-1);
+    text-align: center;
+}
+
+.section__title h2 span{
+    color: var(--color-primary-accent);
+}
+/*service section title ends*/
+
+
+/*Service Items css starts here*/
+.servicesItems{
+    width: var(--container-width-100);
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    padding: 5rem 0;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.serviceItem{
+    width: var(--item-container-45);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--color-primary-accent);
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 2px 3px 20px 2px  rgba(0, 0, 0, 0.2);
+}
+
+.itemLeft{
+    width: 70%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 1rem;
+    /*border: .2rem solid var(--white);*/
+}
+
+.itemLeft img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.itemTitle{
+    padding-bottom: 1rem;
+    width: 80%;
+}
+
+.itemTitle h6{
+    font-size: var(--item-title);
+    color: var(--white);
+}
+
+.itemdesc{
+    width: 95%;
+}
+
+.itemdesc p {
+    color: var(--white);
+    line-height: 1.2rem;
+}
+
+.itemButton{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    border: solid 2px white;
+    margin-top: 1.5rem;
+    border-radius: 2rem;
+}
+
+.itemLink{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+}
+
+
+
+.icon{
+    border: none;
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+
+.serviceItem:hover{
+    background-color: var(--white);
+    transition: var(--transition);
+}
+
+.serviceItem:hover .itemTitle h6{
+    color: var(--matte-black);
+}
+
+.serviceItem:hover .itemdesc p {
+    color: var(--matte-black);
+}
+
+.serviceItem:hover .itemButton{
+    background-color: var(--color-primary-accent);
+    border: none;
+}
+
+.serviceItem:hover .itemLeft{
+    border: .2rem solid transparent;
+}
+/*Service Items css ends here*/
+
+
+/*Media queries for tablets devices start here */
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .serviceItem{
+        width: var(--item-container-100);
+        align-items: center;
+    }
+}
+
+/*media queries for tablets devices ends here*/
+
+
+/* Media queries for small devices start here*/
+
+@media screen and (max-width: 767px){
+    
+    .service__wrapper{
+        width: 90%;
+    }
+    
+    .serviceItem{
+        width: var(--item-container-lg);
+        align-items: center;
+    }
+
+    .itemLeft{
+        display: none;
+        /*border: .2rem solid var(--white);*/
+    }
+}
+
+/*Media queries for small devices ends here*/
